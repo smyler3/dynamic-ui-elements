@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * General Styling
+ * ------------------------------------------------------------
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+/*
+ * ------------------------------------------------------------
+ * Content Layout
+ * ------------------------------------------------------------
+ */
+
+.content-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+/*
+ * ------------------------------------------------------------
+ * Dropdown Menu Styling
+ * ------------------------------------------------------------
+ */
+
+.dropdown-menu-container {
+    width: 400px;
+    margin-top: 4rem;
+    background-color: #ffffff;
+}
+
+.menu-information-container {
+    display: grid;
+    grid: 1fr / 3fr auto;
+    height: 40px;
+    border: 2px solid #000000;
+}
+
+.menu-title {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.menu-visibility-button {
+    height: 100%;
+    width: 100px;
+}
+
+.dropdown-menu {
+    border: 2px solid #000000;
+    border-top: none;
+}
+
+.dropdown-list {
+    display: grid;
+    grid-auto-rows: 40px;
+    row-gap: 1px;
+    background-color: #000000;
+}
+
+.dropdown-list-element {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #ffffff;
+}
+.dropdown-list-element:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
