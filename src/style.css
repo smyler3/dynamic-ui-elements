@@ -30,19 +30,31 @@ li {
     padding-top: 2rem;
 } 
 
-.content-frame {
+.carousel-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.slider-frame {
     width: 200px;
     height: 200px;
     border: 1px solid #000000;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
-.images-container {
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: calc(3 * 198px);
     height: 100%;
+    transition: right 0.5s ease-in-out; /* Adjust duration and timing function as needed */
 }
 
 .image {
