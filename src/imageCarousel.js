@@ -13,11 +13,19 @@ function moveToNextImage(slider) {
 function moveToPreviousImage(slider) {
   const rightValue = parseInt(slider.style.right);
   slider.style.right = `${rightValue - imageSize}px`;
+  const sliderFrame = document.querySelector(".slider-frame");
+
+  // Add the 'active' class to the slider frame to style the specific dot
+  sliderFrame.classList.add(".active");
 }
 
 function initialiseArrows(backArrow, forwardArrow, slider) {
   backArrow.addEventListener("click", () => moveToPreviousImage(slider));
   forwardArrow.addEventListener("click", () => moveToNextImage(slider));
+  const sliderFrame = document.querySelector(".slider-frame");
+
+  // Add the 'active' class to the slider frame to style the specific dot
+  sliderFrame.classList.add(".active");
 }
 
 let imageSize = null;
