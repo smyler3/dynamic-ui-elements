@@ -37,9 +37,8 @@ li {
     /* overflow: hidden; */
 }
 
-.image-container {
+.images-container {
     position: relative;
-    right: 198px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: calc(3 * 198px);
