@@ -32,7 +32,8 @@ li {
 
 .carousel-container {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 1rem;
 }
 
 .slider-frame {
@@ -64,10 +65,18 @@ li {
     cursor: pointer;
 }
 
+.active {
+    background-color: aqua;
+}
+
 .arrow {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.arrow-btn {
+    padding: 1rem 1.5rem;
 }
 
 .slider {
