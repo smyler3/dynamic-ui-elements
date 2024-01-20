@@ -2,7 +2,8 @@ import "./style.css";
 import { attachDropdownMenuButtonListener } from "./dropdownMenu";
 import { initialiseCarousel } from "./imageCarousel";
 
-const slider = document.querySelector(".slider");
 const backArrow = document.querySelector(".back-arrow");
 const forwardArrow = document.querySelector(".forward-arrow");
-initialiseCarousel(backArrow, forwardArrow, slider);
+const slider = document.querySelector(".slider");
+const navBar = document.querySelector(".slider-navigation");
+initialiseCarousel(backArrow, forwardArrow, slider, navBar);
