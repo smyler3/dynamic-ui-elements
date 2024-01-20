@@ -6,67 +6,71 @@
     <title>Dynamic Elements</title>
 <script defer src="main.bundle.js"></script></head>
 <body>
-    <!-- Header containing sidebar button -->
-    <div class="header">
-
-    </div>
-    <div class="content-body">
-        <!-- Collapsable Mobile Sidebar -->
-        <span class="sidebar">
-
-        </span>
-
-        <!-- Collapsable Menus -->
-        <div class="dropdown-menus">
-            <div class="dropdown-menu-container">
-                <div class="menu-information-container">
-                    <span class="menu-title">
-                        <h3>Dropdown List</h3>
-                    </span>
-                    <span>
-                        <button class="option-button menu-visibility-button"></button>
-                    </span>
-                </div>
-                <div class="options-menu dropdown-menu hidden">
-                    <ul class="dropdown-list">
-                        <li class="dropdown-list-element">
-                            <div>Option 1</div>
-                        </li>
-                        <li class="dropdown-list-element">
-                            <div>Option 2</div>
-                        </li>
-                        <li class="dropdown-list-element">
-                            <div>Option 3</div>
-                        </li>
-                    </ul>
-                </div>
+    <div class="page-body">
+        <!-- Likely add the collapsable menus into the sidebar -->
+        <!-- Header containing sidebar button -->
+        <div class="header">
+            <button class="open-sidebar-button">=</button>
+            <h2 class="header-logo">Logo Title</h2>
         </div>
-        </div>
-
-        <div class="dropdown-menu-container">
-            <div class="menu-information-container">
-                <span class="menu-title">
-                    <h3>Dropdown List</h3>
-                </span>
-                <span>
-                    <button class="choice-button menu-visibility-button"></button>
-                </span>
-            </div>
-            <div class="choices-menu dropdown-menu hidden">
-                <ul class="dropdown-list">
-                    <li class="dropdown-list-element">
-                        <div>Choice 1</div>
+        <div class="content-body">
+            <!-- Collapsable Mobile Sidebar -->
+            <span class="sidebar">
+                <div class="sidebar-header">
+                    <button>x</button>
+                    <h2 class="sidebar-logo">New Sidebar Menu</h2>
+                </div>
+                <!-- Collapsable Menus -->
+                <ul class="sidebar-menu-list">
+                    <li class="dropdown-menu-container">
+                        <div class="menu-information-container">
+                            <span class="menu-title">
+                                <h3>Option List</h3>
+                            </span>
+                            <span>
+                                <button class="option-button menu-visibility-button"></button>
+                            </span>
+                        </div>
+                        <div class="options-menu dropdown-menu hidden">
+                            <ul class="dropdown-list">
+                                <li class="dropdown-list-element">
+                                    <div>Option 1</div>
+                                </li>
+                                <li class="dropdown-list-element">
+                                    <div>Option 2</div>
+                                </li>
+                                <li class="dropdown-list-element">
+                                    <div>Option 3</div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="dropdown-list-element">
-                        <div>Choice 2</div>
-                    </li>
-                    <li class="dropdown-list-element">
-                        <div>Choice 3</div>
+                    <li class="dropdown-menu-container">
+                        <div class="menu-information-container">
+                            <span class="menu-title">
+                                <h3>Choice List</h3>
+                            </span>
+                            <span>
+                                <button class="choice-button menu-visibility-button"></button>
+                            </span>
+                        </div>
+                        <div class="choices-menu dropdown-menu hidden">
+                            <ul class="dropdown-list">
+                                <li class="dropdown-list-element">
+                                    <div>Choice 1</div>
+                                </li>
+                                <li class="dropdown-list-element">
+                                    <div>Choice 2</div>
+                                </li>
+                                <li class="dropdown-list-element">
+                                    <div>Choice 3</div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
-            </div>
+            </span>
         </div>
-        <div>Next</div>
     </div>
 </body>
 </html>

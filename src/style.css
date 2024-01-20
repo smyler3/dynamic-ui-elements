@@ -1,3 +1,8 @@
+:root {
+    --screen-width: 400px;
+    --screen-height: 700px;
+}
+
 /*
  * ------------------------------------------------------------
  * General Styling
@@ -23,12 +28,56 @@ li {
  * ------------------------------------------------------------
  */
 
-.content-body {
+body {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 } 
+
+.page-body {
+    height: var(--screen-height);
+    width: var(--screen-width);
+    border: 1px solid #000000;
+} 
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+} 
+
+/*
+ * ------------------------------------------------------------
+ * Header Styling
+ * ------------------------------------------------------------
+ */
+
+.header, .sidebar-header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #ffffff;
+    background-color: rgb(141, 5, 146);
+} 
+
+.header-logo, .sidebar-logo {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: calc(0.9 * var(--screen-width));
+    height: var(--screen-height);
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+.sidebar-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 /*
  * ------------------------------------------------------------
@@ -37,16 +86,14 @@ li {
  */
 
 .dropdown-menu-container {
-    width: 400px;
-    margin-top: 4rem;
+    width: 100%;
     background-color: #ffffff;
 }
 
 .menu-information-container {
     display: grid;
     grid: 1fr / 3fr auto;
-    height: 40px;
-    border: 2px solid #000000;
+    height: 30px;
 }
 
 .menu-title {
@@ -69,7 +116,7 @@ li {
 
 /* Hides the dropdown list */
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .dropdown-list {
